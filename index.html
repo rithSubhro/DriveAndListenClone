@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Drive and Listen</title>
+</head>
+<body>
+    <div id="player"></div>
+
+    <div class="sidebar_toggle" id="toggle">
+        <i class="fa fa-eye white" id="prev" aria-hidden="true"></i>
+    </div>
+
+
+<div class="sidebar">
+    <h2>drive and listen</h2>
+    <div class="location_container">
+        <h4>Scroll down for more cities</h4>
+        <div class="locations">
+            <ul id="locations">
+                <li>Kolkata</li>
+                <li>Kolkata</li>
+                <li>Kolkata</li>
+                <li>Kolkata</li>
+                <li>Kolkata</li>
+                <li>Kolkata</li>
+                <li>Kolkata</li>
+                <li>Kolkata</li>
+                <li>Kolkata</li>
+                <li>Kolkata</li>
+                <li>Kolkata</li>
+                <li>Kolkata</li>
+                <li>Kolkata</li>
+            </ul>
+        </div>
+    </div>
+    <div class="video_speed">
+        <h4> Car Speed</h4>
+        <div class="speed" id="speed">
+            <p class="active">.5x</p>
+            <p>1x</p>
+            <p>1.5x</p>
+            <p>2x</p>
+        </div>
+    </div>
+
+    <div class="car_noise">
+        <h4>car noise</h4>
+        <div class="mute" id="mute">Off</div>
+    </div>
+    <div class="audio">
+        <h4>Car Audio</h4>
+        <div class="audio_controls">
+            <div class="controls">
+                <i class="fa fa-step-backward" id="prev" aria-hidden="true"></i>
+                <i class="fa fa-play" id="play" aria-hidden="true"></i>
+                <i class="fa fa-step-forward" id="next" aria-hidden="true"></i>
+            </div>
+
+            <div class="volume">
+                <input type="range" min="1" max="100" value="50" id="volume">
+            </div>
+        </div>
+
+        <!-- <audio id="music" src="https://radioindia.net/radio/sc-bb/icecast.audio" crossorigin autoplay></audio> -->
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+body{
+    height: 100vh;
+}
+
+#player{
+    pointer-events: none;
+    z-index: -99;
+    transform: translate(-5%);
+}
+
+.sidebar{
+    z-index: 99;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    max-width: 250px;
+    width: 40vw;
+    height: 100vh;
+    color: white;
+    background-color: rgba(0, 0, 0, .4);
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar h2{
+    text-align: center;
+}
+
+.sidebar_toggle{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    padding: 5px;
+}
+
+.white{
+    color: white;
+    background-color: rgba(0, 0, 0, .4);
+    border-radius:  50%;
+    padding: 5px;
+}
+
+.location_container{
+    background-color: rgba(0, 0, 0, .4);
+    border: 1px solid white;
+    border-radius: 2px;
+    margin: 20px 0;
+
+}
+
+.location_container h4{
+    width: inherit;
+    background-color: rgba(255, 255, 255, .4);
+    padding: 10px;
+    text-align: center;
+    font-size: 0.8rem;
+    border-bottom: 1px solid white;
+}
+
+.locations{
+    max-height: 25vh;
+    overflow-y: scroll;
+}
+
+.locations li{
+    padding: 2px 5px;
+    border-bottom: 1px solid white;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.locations li:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.locations li:active{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.speed{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.video_speed{
+    margin: 5px 0;
+}
+
+.video_speed h4{
+    text-align: center;
+    padding: 5px 0;
+}
+
+.speed p, .mute{
+    cursor: pointer;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 1px solid white;
+    border-radius: 2px;
+    text-align: center;
+}
+
+.speed p:hover, .mute:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.speed p.active{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.car_noise{
+    text-align: center;
+    padding: 5px 0;
+}
+
+.car_noise h4{
+    padding: 5px 0;
+}
+
+.audio{
+    text-align: center;
+    background-color: rgba(255, 255, 255, .4);
+    margin: 20px 0;
+    border-radius: 2px;
+    border: 1px solid white;
+}
+
+.audio h4{
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid white;
+}
+
+.audio_controls{
+    display: flex;
+
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 1px solid white;
+}
+.controls{
+    padding: 15px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom: 1px solid white;
+}
+
+.volume{
+    padding: 15px 0;
+}
